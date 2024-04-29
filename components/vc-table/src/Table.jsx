@@ -388,7 +388,8 @@ export default {
     },
     handleWheel(event) {
       const { scroll = {} } = this.$props;
-      if (window.navigator.userAgent.match(/Trident\/7\./) && scroll.y) {
+      //if (window.navigator.userAgent.match(/Trident\/7\./) && scroll.y) {
+        if (scroll.y) {
         event.preventDefault();
         const wd = event.deltaY;
         const target = event.target;
